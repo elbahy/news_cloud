@@ -7,26 +7,31 @@ class CategoryWidget extends StatelessWidget {
   final CategoryModel category;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 80,
-      width: 160,
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage(category.imageUrl), opacity: .8),
-          borderRadius: BorderRadius.circular(16)),
-      child: Center(
-        child: Text(
-          category.categoryName,
-          style: const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              shadows: [
-                Shadow(
-                    color: Colors.orange,
-                    offset: Offset(1.0, 1.0),
-                    blurRadius: 8.0)
-              ]),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 80,
+        width: 160,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage(category.imageUrl),
+                opacity: .8),
+            borderRadius: BorderRadius.circular(16)),
+        child: Center(
+          child: Text(
+            category.categoryName,
+            style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                shadows: [
+                  Shadow(
+                      color: Colors.orange,
+                      offset: Offset(1.0, 1.0),
+                      blurRadius: 8.0)
+                ]),
+          ),
         ),
       ),
     );
