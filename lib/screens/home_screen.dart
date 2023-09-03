@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_cloud/widgets/category_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,6 +22,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      body: const CategoryWidget(),
     );
   }
 }
