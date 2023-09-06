@@ -37,3 +37,11 @@ class CategoryWidget extends StatelessWidget {
     );
   }
 }
+
+class x extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
