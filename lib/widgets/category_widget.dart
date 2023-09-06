@@ -8,7 +8,7 @@ class CategoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 6),
       child: Container(
         height: 80,
         width: 160,
@@ -35,13 +35,5 @@ class CategoryWidget extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class x extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
   }
 }
