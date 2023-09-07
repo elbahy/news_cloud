@@ -1,4 +1,6 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:news_cloud/services/news_service.dart';
 
 import 'news_tile_widget.dart';
 
@@ -12,6 +14,6 @@ class NewsListView extends StatelessWidget {
     return SliverList(
         delegate: SliverChildBuilderDelegate(
             ((context, index) => const NewsTile()),
-            childCount: 5));
+            childCount: 10));
   }
 }
